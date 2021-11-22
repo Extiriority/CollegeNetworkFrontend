@@ -1,8 +1,5 @@
 <script>
-    import {authenticated} from '$lib/shared/stores';
-    import {goto} from "$app/navigation";
-    import Fontys from "../resources/fontys.svg"
-    import {onMount} from "svelte";
+
 
     let auth = false;
     let message
