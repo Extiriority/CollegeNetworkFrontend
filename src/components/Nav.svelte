@@ -58,7 +58,7 @@
                       <a class="hover:text-purple-500" sveltekit:prefetch href="/profile/@{name}">{name}</a>
                     </li>
                     <li class="mx-2">
-                      <a class="hover:text-purple-500" sveltekit:prefetch href="/" on:click|preventDefault={logout}>Logout</a>
+                      <a class="hover:text-purple-500" sveltekit:prefetch href="/" on:click|preventDefault={logout}>Logoutt</a>
                     </li>
                 </ul>
             {:else }
