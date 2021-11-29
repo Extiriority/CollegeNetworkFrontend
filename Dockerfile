@@ -1,7 +1,7 @@
 FROM mhart/alpine-node:16
 
 # install dependencies
-WORKDIR /CollegeNetworkFrontend
+WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 
@@ -16,8 +16,8 @@ RUN npm run build
 ###
 FROM mhart/alpine-node:slim-16
 
-WORKDIR /CollegeNetworkFrontend
-COPY --from=0 /CollegeNetworkFrontend .
+WORKDIR /app
+COPY --from=0 /app .
 COPY . .
 
 EXPOSE 3000
