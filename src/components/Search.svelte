@@ -41,7 +41,7 @@ const search = s => {
 		<h2 class="mt-2 text-3xl font-extrabold text-gray-900 ">
 			Search
 		</h2>
-		<input type='text' placeholder='search person' class='border border-gray-500 rounded-2xl w-full pl-4 my-2' on:keyup={e => search(e.target.value)}/>
+		<input type='text' aria-label="Search" placeholder='search person' class='border border-gray-500 rounded-2xl w-full pl-4 my-2' on:keyup={e => search(e.target.value)}/>
 		<ul>
 			{#each filteredUsers as user}
 				<li class='border rounded-2xl border-purple-400 hover:bg-purple-100 pb-1 mt-1 text-center'>

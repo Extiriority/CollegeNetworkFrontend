@@ -5,10 +5,10 @@ export const authenticated = writable(false);
 
 const messageStore = writable('');
 
-const socket  = new WebSocket('ws://90c8-82-169-163-180.ngrok.io/');
+const socket  = new WebSocket('ws://3287-82-169-163-180.ngrok.io/');
 
 //connection open
-socket.addEventListener('open', function(event){
+socket.addEventListener('open', function(){
 	console.log("it's open")
 });
 
